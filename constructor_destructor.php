@@ -15,11 +15,15 @@
             echo "Student name: ".$this->name."\n"."Class: ".$this->class."\n"."Roll: ".$this->roll;
         }
 
+        function __destruct() {
+            echo "Student name: ".$this->name."\n"."Class: ".$this->class."\n"."Roll: ".$this->roll;
+        }
+
     }
 
 
     $student1 = new Student("Arif", "Diploma In Computer Engineering", "112864");
 
-    $student1->print_info();
+    // $student1->print_info();
 
 ?>
